@@ -1,0 +1,304 @@
+.body__container{
+	font-size: 16px;
+  	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+.float--left{
+	float:left;
+}
+
+.float--right{
+	float:right;
+}
+
+div{
+	display: block;
+}
+
+p{
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/*header*/
+
+header {
+	border-bottom: 1px solid rgba(0,0,0,.70);
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	background: #fff;
+}
+
+header .inner{
+	height:78px;
+}
+
+
+.section {
+	position: relative;
+}
+
+.section .inner{
+	max-width: 980px;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.container .inner{
+	display: flex;
+}
+
+
+/*main menu*/
+.menu_group{
+
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.logo {
+	margin-right: 10px;
+}
+
+.logo a{
+	background: url("../img/logo.svg");
+	width: 32px;
+	height: 32px;
+	display: block;
+	text-indent: -9999px; /*대체 텍스트*/
+}
+
+.logo a:hover{
+	background: url("../img/logo_on.svg");
+}
+
+.main_menu {
+	display : flex;
+}
+
+.main_menu li a{
+	padding: 10px;
+	display: block;
+	color: #3c4146;
+}
+
+.main_menu li a:hover{
+	padding: 10px;
+	display: block;
+	color: #4078c0;
+}
+
+
+/*submenu*/
+
+.sub_group {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	flex-direction: row-reverse;
+}
+
+.sub_menu{
+	display: flex;
+	margin-right: 10px;
+}
+
+.sub_menu li a{
+	padding: 8px;
+	display: block;
+	color: #3c4146;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.sub_menu li a:hover{
+	padding: 8px;
+	display: block;
+	color: #4078c0;
+}
+
+#search{
+	width: 160px;
+	font-size: 14px;
+}
+
+#search+[type="submit"]{
+	display: none;
+}
+
+#search_form{
+	margin-right: 12px;
+}
+
+.input--text{
+	height: 34px;
+	padding: 0 10px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.08);
+	margin: 0 10px;
+
+}
+.input--text:focus{
+	border-color: #51a7e8 !important;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.08), 0 0 5px rgba(81,167,232,.5);
+}
+.input--text::-webkit-input-placeholder{color: #cacaca}
+
+
+/*btn_menu*/
+.btn{
+	display: flex;
+	align-items: center;
+	height: 34px;
+	padding: 0 12px;
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #333;
+	line-height: 1.5;
+	/*text-align: center;*/
+	background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+	box-sizing: border-box;
+	position: relative;
+	margin-right: 4px;
+}
+
+.btn:hover::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.07);
+}
+
+.btn.btn--primary{
+	border: 1px solid #65b836;
+	color: #fff;
+	background: #55a532 linear-gradient(to bottom, #91dd70, #55a532);
+
+}
+
+.btn_group.signin{
+	margin-right: 4px;
+}
+
+.btn_group{
+	display: flex;
+}
+
+.container {
+	position: relative;
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: cover;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+}
+.column_left {/*
+	display: flex;*/
+	margin-right: 70px;
+	align-items: center;
+	padding:  160px 0 ;
+}
+
+
+.title_section {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	/*text-shadow: 0 1px 1px rgba(0,0,0,.25);*/
+	text-shadow: 0 1px 25px rgba(0,0,0,.75);
+}
+
+.desc_section {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.5;
+	text-shadow: 0 1px 25px rgba(0,0,0,.75);
+}
+
+#create_acc+[type="submit"]{
+	display: none;
+}
+
+.create_account div{
+	margin-bottom: 15px;
+}
+
+.column_right {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.caption {
+	padding: 0 10px;
+	font-size: 11px;
+	color: rgba(255, 255, 255, .6);
+	line-height: 1.5;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#create_acc{
+	width: 340px;
+	font-size: 16px;
+}
+
+#signup-form .input--text{
+	width: 100%;
+	height: 40px;	
+	margin: 0;
+}
+
+#create_acc+[type="submit"]{
+	display: none;
+}
+
+.btn.btn--primary--2{
+	width:340px;
+	height:50px;
+	justify-content: center;
+	font-size:20px;
+}
+
+.signup{
+	width: 100%;
+ 	height: 62px;
+  	padding: 0;
+  	font-size: 20px;
+}
+
+.signup input{
+	display : none;
+}
