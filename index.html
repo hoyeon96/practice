@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
 </head>
 <body>
 	<div class="body__container">
@@ -135,10 +136,42 @@
 				</div>
 			</div>
 		</section>
+		<section class="section where">
+			<div class="inner">
+				<div class="summary">
+					<h2 class="summary__title">
+						Where is GitHub?
+					</h2>
+					<p class="summary__description">
+						GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+					</p>
+				</div>
+				<div id="map"></div>
+			</div>
 
+		</section>
 		<footer>
 			
 		</footer>
 	</div>
+	<script type="text/javascript">
+		function initMap(){
+			const myLatLng = {
+				lat: 37.499356,
+				lng: 127.028253
+			}
+			const map = new google.maps.Map(document.getElementById('map'),{
+				center: myLatLng,
+				scrollwheel: false,
+      			zoom: 18
+			})
+			const marker = new google.maps.Marker({
+				position : myLatLng,
+				map : map,
+				title : 'gangnam'
+			})
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>
